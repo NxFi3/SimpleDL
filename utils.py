@@ -13,13 +13,19 @@ class OneHotEncoding:
         Returns:
             numpy array: OneHot Vector
         """
-        one_hot = np.zeros(self.num_classes)
-        one_hot[y] = 1
-        return one_hot
+        if isinstance(y, (int, np.integer)):
+            one_hot = np.zeros(self.num_classes)
+            one_hot[y] = 1
+            return one_hot
+
+        return np.array([self.encode(item) for item in y])
+    
     
     def decode(self, one_hot):
-        
-        return np.argmax(one_hot)
+        if len(one_hot.shape) == 1:
+            return np.argmax(one_hot)
+        return np.argmax(one_hot, axis=1)
+    
     
     def encode_batch(self, y_batch):
        
