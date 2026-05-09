@@ -16,9 +16,13 @@ class Layer:
         pass
 
 class Sequential(Layer):
-    def __init__(self, architecture: list):
+    def __init__(self, *architecture):
         super().__init__()
-        self.layers = architecture  
+        if len(architecture) == 1 and isinstance(architecture[0],list):
+            self.layers = architecture[0]
+        else:
+
+            self.layers = list(architecture)
     
     def __call__(self, x):
         out = x
