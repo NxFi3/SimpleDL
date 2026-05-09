@@ -1,6 +1,6 @@
 from typing import Any
 
-from activations import Dropout
+from SimpleDL.activations import Dropout
 import numpy as np
 
 
