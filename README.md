@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## ✨ Features
+##  Features
 
 - **Sequential API** - Build neural networks layer by layer
 - **Linear Layer** - Fully connected layer with He initialization
@@ -16,7 +16,7 @@
 - **Utilities** - One-Hot Encoding
 - **Pure NumPy** - No external dependencies except NumPy
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install numpy
@@ -26,7 +26,7 @@ pip install numpy
 git clone https://github.com/NxFi3/SimpleDL.git
 cd SimpleDL
 ```
-## 🚀 Quick Start
+##  Quick Start
 - XOR Problem Example
 ```python
 #import module
@@ -67,7 +67,7 @@ for x in X:
     pred = model(x)
     print(f"Input : {x} ,Model Predict : {np.argmax(pred)}")
 ```
-## 📁 Project Structure
+##  Project Structure
 ```text
 SimpleDL/
 ├── SimpleDL/  
@@ -81,7 +81,7 @@ SimpleDL/
 └── README.md
 ```
 
-## 📖 API Reference
+##  API Reference
 
 ### Layers
 
@@ -116,7 +116,7 @@ SimpleDL/
 | `SGD(model, loss_fn, lr)` | 0.001 - 0.1 | Simple problems |
 | `Adam(model, loss_fn, lr=0.001)` | 0.0001 - 0.01 | Most problems (recommended) |
 
-## 💡 Examples
+##  Examples
 
 ### Binary Classification (Apple vs Orange)
 
@@ -148,7 +148,7 @@ optimizer = optim.SGD(model, losses.MSELoss(), lr=0.01)
 - Python ≥ 3.8
 - NumPy
 
-## 🧪 Testing
+##  Testing
 
 Run the XOR example:
 
@@ -172,23 +172,19 @@ Input : [1 1] ,Model Predict : 0
 Input : [0 0] ,Model Predict : 0
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to open issues or submit pull requests. Suggestions for improvements are welcome!
 
-## 📄 License
+##  License
 
-MIT License - feel free to use this project for learning and teaching.
+MIT License
 
-## 👨‍💻 Author
+##  Author
 
 **NxFi3**
 
 - GitHub: [@NxFi3](https://github.com/NxFi3)
-
-## ⭐ Show Your Support
-
-If you found this helpful, please give it a ⭐ on GitHub!
 
 ### `requirements.txt`
 ```txt
