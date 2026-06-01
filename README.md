@@ -1,6 +1,6 @@
 # SimpleDL
 
-**SimpleDL** is a lightweight deep learning framework built from scratch using NumPy. It's designed for educational purposes to help understand how neural networks work under the hood.
+**SimpleDL** is a lightweight deep learning framework built from scratch using NumPy. It's designed for **educational purposes** to help understand how neural networks work under the hood.
 
 ![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
